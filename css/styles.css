@@ -296,7 +296,8 @@ ul {
   padding-bottom: 120px;
 }
 .section-four-item {
-  width: calc((100% - 48px) / 3);
+  /*width: calc((100% - 48px) / 3); destop*/
+  width: 100%;
   position: relative;
 }
 .card-one {
@@ -392,17 +393,23 @@ ul {
   flex-wrap: wrap;
 }
 .section-four-item {
-  border: 1px solid #e7e9fc;
+  /*border: 1px solid #e7e9fc;*/
+  border: 1px solid #f4f4fd;
   background: #fff;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-four-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);*/
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .main-section-four {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px;* desktop*/
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .paragraph-section-four {
   text-align: start;
