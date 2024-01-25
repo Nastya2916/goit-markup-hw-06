@@ -56,7 +56,8 @@ button {
   gap: 40px;
 }
 .main-section-one {
-  padding: 188px 0;
+  /*padding: 188px 0;*/
+  padding: 72px 0;
   background: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -141,12 +142,13 @@ ul {
 .main-title-effective {
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07; /* 107.143% */
+  line-height: 1.11; /* 107.143% */
   letter-spacing: 0.02em;
   margin-bottom: 48px;
-  max-width: 496px;
+  /*max-width: 496px;*/
+  max-width: 216px;
   margin: 0 auto;
 }
 
@@ -159,7 +161,8 @@ ul {
   background-color: #4d5ae5;
   display: block;
   margin: 0 auto;
-  margin-top: 48px;
+  /*margin-top: 48px;*/
+  margin-top: 72px;
   border: 0;
   padding-top: 16px;
   padding-right: 32px;
@@ -167,6 +170,8 @@ ul {
   padding-left: 32px;
   min-width: 169px;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button {
