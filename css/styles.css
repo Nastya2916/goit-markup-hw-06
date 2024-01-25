@@ -468,7 +468,10 @@ ul {
 .footer-page {
   background: #2e2f42;
   display: block;
-  padding: 100px 0;
+  /*padding: 100px 0;*/
+  padding: 96px 0;
+  width: 320px;
+  width: 100%;
 }
 .footer-logo {
   color: #4d5ae5;
@@ -481,6 +484,8 @@ ul {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 16px;
+  padding-left: 86px;
+  padding-right: 86px;
 }
 .span-web {
   color: #f4f4fd;
@@ -492,7 +497,8 @@ ul {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   text-align: left;
-  max-width: 264px;
+  /*max-width: 264px;*/
+  max-width: 288px;
 }
 .footer-icon {
   font-family: Roboto;
@@ -503,6 +509,7 @@ ul {
   color: #fff;
   margin-bottom: 16px;
   font-weight: 500;
+  text-align: center;
 }
 
 .section-footer-icon {
@@ -537,13 +544,16 @@ ul {
 }
 .footer-conteiner {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
 }
 .footer-conteiner {
   align-items: baseline;
   margin-right: 120px;
 }
 .conteiner-footer-link {
-  margin-left: 120px;
+  /*margin-left: 120px;*/
+  margin: 0 auto;
 }
 .text-footer {
   color: #fff;
@@ -552,9 +562,11 @@ ul {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
   font-weight: 500;
+  text-align: center;
 }
 .forma-footer {
-  margin-left: 80px;
+  /*margin-left: 80px;*/
+  margin: 0 auto;
 }
 .footer-input {
   width: 264px;
@@ -570,9 +582,10 @@ ul {
   padding-left: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #ffffff;
+  margin-bottom: 16px;
 }
 .footer-form {
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   gap: 24px;
 }
@@ -598,6 +611,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-fotter:hover {
@@ -834,6 +848,27 @@ ul {
   .main-page {
     text-align: left;
   }
+  .footer-form {
+    display: flex;
+  }
+  .footer-logo {
+    padding: 0;
+  }
+  .footer-icon {
+    text-align: start;
+  }
+  .text-footer {
+    text-align: start;
+  }
+  .footer-page {
+    padding-left: 108px;
+  }
+  .forma-footer {
+    margin: 0;
+  }
+  .footer-input {
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1158px) {
   .container {
@@ -863,7 +898,7 @@ ul {
   }
   .main-section-two {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 96;
   }
   .menu-container {
     padding: 0;
@@ -880,5 +915,8 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+  }
+  .footer-page {
+    padding: 100px 0;
   }
 }
