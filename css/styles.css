@@ -190,15 +190,18 @@ ul {
   overflow: hidden;
 }
 .main-section-two {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /*padding-top: 120px;
+  padding-bottom: 120px;*/
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-.main-item {
+/*.main-item {
   width: calc((100% - 72px) / 4);
-}
+}*/
 /*пробная секция вторая, не могу пока разобраться*/
 .icon-two {
-  display: flex;
+  /*display: flex;*/
+  display: none;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
@@ -217,10 +220,32 @@ ul {
 /*------------------------*/
 .main-menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
+  row-gap: 72px;
 }
-.main-page,
-.title-section-three,
+.main-page {
+  /*color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% 
+  letter-spacing: 0.02em;*/
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1/11; /* 111.111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.title-section-three {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+}
+
 .title-section-four {
   color: #2e2f42;
   font-size: 20px;
@@ -237,8 +262,25 @@ ul {
   margin-bottom: 8px;
 }
 
-.main-paragraph,
-.paragraph-section-three,
+.main-paragraph {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  align-self: stretch;
+}
+.paragraph-section-three {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
 .paragraph-section-four {
   text-align: center;
   font-family: Roboto;
@@ -786,10 +828,20 @@ ul {
     padding-left: 108px;
     padding-right: 108px;
   }
+  .main-item {
+    width: calc((100% - 48px) / 2);
+  }
+  .main-page {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+  .main-section-four {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   .section-four-item {
     width: calc((100% - 48px) / 3);
@@ -801,8 +853,32 @@ ul {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
+  .main-section-three {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .section-three-item {
     width: calc((100% - 72px) / 4);
     gap: 24px;
+  }
+  .main-section-two {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .menu-container {
+    padding: 0;
+  }
+  .icon-two {
+    display: flex;
+  }
+  .main-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .main-page {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
   }
 }
